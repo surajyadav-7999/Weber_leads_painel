@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+:root{
+    --transition: all 0.7s ease;
+    --yellow: #f9d342;
+    --dark:#E8E8E8;
+}
+body
+{
+    margin: 0;
+    height: 2000px;
+    font-family: sans-serif;
+}
+#diagnol
+{
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url(headway-5QgIuuBxKwM-unsplash.jpg);
+    background-position: right top;
+    border-left: 200px solid white;
+    border-top: 700px solid transparent;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#box
+{
+    float: left;
+    height: 700px;
+    
+}
+#outer
+{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+#inner
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+#about .content-title h1
+{
+    text-align: left;
+}
+#about .underline
+{
+    margin: 0 0 30px 0p;
+}
+#aboute-desc p
+{
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+.btn
+{
+    border-radius: 30px !important;
+    padding: 15px 30px;
+}
+.btn-danger
+{
+    background: #b40fb9 !important;
+}
+
+/*  images section strat  */
+
+
+/* room */
+
+.rooms{
+    margin: 40px 0;
+}
+.room{
+    margin: 45px 0;
+    padding-bottom: 25px;
+    background: var(--dark);
+    color: #000;
+}
+.room-text{
+    padding: 5px 20px;
+   
+}
+.room-text h3{
+    font-size: 24px;
+}
+.room-text ul{
+    list-style-type: none;
+    margin: 15px 0;
+}
+.room-text ul li{
+    padding: 7px 0;
+}
+.room-text ul li i{
+    color: var(--yellow);
+    margin-right: 10px;
+}
+.rate{
+    opacity: 0.8;
+}
+.rate span{
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--yellow);
+}
+.room-image{
+    overflow: hidden;
+}
+.room-image img{
+    transition: var(--transition);
+}
+.room-image:hover img{
+    transform: scale(1.1);
+}
+@media (min-width: 900px){
+    .rooms-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .room{
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+    }
+}
+@media(min-width: 1370px){
+    .rooms-container{
+        flex-direction: column;
+    }
+    .room{
+        display: flex;
+        padding-bottom: 0;
+        margin: 5px 0;
+    }
+    .room-image{
+        flex: 1;
+    }
+    .room-image img{
+        height: 100%;
+    }
+    .room-image video
+    {
+        height: 100%;
+    }
+    .room-text{
+        flex: 1;
+    }
+    .room:nth-child(even){
+        flex-direction: row-reverse;
+    }
+}
+
+
+/* images end section */
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) 
+{
+  #about
+    {
+    width: 100%;
+    height: 500px;
+    background-image: url(DLT-Page.png);
+    background-repeat: no-repeat;
+   }
+    .content-title
+    {
+        margin-top: 600px;
+    }
+    #diagnol
+    {
+        display: none;
+    } 
+    .ok 
+    {
+        margin-top: 300px;
+        border-left-width: 15px;
+        margin-right: 0px;
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    #box
+    {
+        width: 100%;
+        float:right;
+    }
+    #about .underline
+    {
+        display: none;
+    }
+}
+
